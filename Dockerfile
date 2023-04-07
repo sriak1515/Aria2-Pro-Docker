@@ -13,7 +13,7 @@
 
 FROM p3terx/s6-alpine
 
-RUN apk add --no-cache jq findutils && \
+RUN apk add --no-cache jq findutils unrar lsof && \
     curl -fsSL git.io/aria2c.sh | bash && \
     rm -rf /var/cache/apk/* /tmp/*
 

@@ -25,3 +25,6 @@ else
     chmod -v 755 ${SCRIPT_DIR}
     chmod -v 700 ${SCRIPT_DIR}/*
 fi
+
+chown -R p3terx:p3terx /extract.sh
+chmod +x /extract.sh
